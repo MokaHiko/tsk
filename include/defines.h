@@ -25,6 +25,6 @@
 
 namespace tsk {
 
-} // namespace tusk
+} // namespace tsk
 
 #endif

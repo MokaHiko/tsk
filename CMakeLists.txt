@@ -10,7 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SOURCES
     include/defines.h
 
+    include/endian.h
     include/tsk.h
+
+    src/endian.cpp
     src/tsk.cpp
 )
 
