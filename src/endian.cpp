@@ -1,6 +1,4 @@
-#include "endian.h"
-
-#include <stdint.h>
+#include "tsk/endian.h"
 
 namespace tsk {
 

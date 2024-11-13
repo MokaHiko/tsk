@@ -8,12 +8,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(SOURCES
-    include/defines.h
+    include/tsk/defines.h
 
-    include/endian.h
-    include/tsk.h
+    include/tsk/endian.h
+    include/tsk/time.h
+    include/tsk/tsk.h
 
     src/endian.cpp
+    src/time.cpp
     src/tsk.cpp
 )
 
