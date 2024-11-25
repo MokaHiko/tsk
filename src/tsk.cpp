@@ -2,4 +2,4 @@
 
 namespace tsk {
 
-} // namespace tgfx
+} // tsk

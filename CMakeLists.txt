@@ -12,11 +12,17 @@ set(SOURCES
 
     include/tsk/endian.h
     include/tsk/time.h
+    include/tsk/file.h
     include/tsk/tsk.h
 
+    include/tsk/murmur_hash_3.h
+
     src/endian.cpp
+    src/file.cpp
     src/time.cpp
     src/tsk.cpp
+
+    src/murmur_hash_3.cpp
 )
 
 if(BUILD_SHARED_LIBS)

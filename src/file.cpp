@@ -26,4 +26,4 @@ size_t file_read(const char* file_path, char* buffer, size_t buffer_size) {
 	return file_size;
 }
 
-} // namespace tgfx
+} // tsk

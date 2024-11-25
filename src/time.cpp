@@ -13,11 +13,21 @@ int64_t get_hp_counter() {
 #ifdef TUSK_WIN32
     LARGE_INTEGER li;
     QueryPerformanceCounter(&li);
-    int64_t i64 = li.QuadPart;
+    return li.QuadPart;
 #endif
 
-    return i64;
+    return 0;
 }
 
-} // namespace t sk
+TUSK_API int64_t get_hp_frequency() {
+#ifdef TUSK_WIN32
+    LARGE_INTEGER li; 
+    QueryPerformanceFrequency(&li);
+    return li.QuadPart;
+#endif
+
+    return 0;
+}
+
+} // namespace tsk
 
