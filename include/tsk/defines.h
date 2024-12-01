@@ -12,7 +12,7 @@
 #ifdef TUSK_EXPORTS
 	#define TUSK_API __declspec(dllexport)
 #else
-	#define TUSK_API  
+	#define TUSK_API
 #endif
 
 #if defined(_MSC_VER)

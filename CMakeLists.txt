@@ -35,7 +35,7 @@ endif()
 # Check for different platforms
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
     message(STATUS "Building on Windows")
-    add_definitions(-DTUSK_WIN32)
+    target_compile_definitions(tsk PUBLIC TUSK_WIN32)
 elseif (CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(STATUS "Building on Linux")
 elseif (CMAKE_SYSTEM_NAME STREQUAL "Darwin")
