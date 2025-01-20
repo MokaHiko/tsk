@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0...3.5)
 project(tsk VERSION 1.0 LANGUAGES CXX)
 
-set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libraries" FORCE)
+set(TSK_BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libraries" FORCE)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -25,7 +25,7 @@ set(SOURCES
     src/murmur_hash_3.cpp
 )
 
-if(BUILD_SHARED_LIBS)
+if(TSK_BUILD_SHARED_LIBS)
     add_library(tsk SHARED ${SOURCES})
     add_definitions(-DTUSK_EXPORTS)
 else()
