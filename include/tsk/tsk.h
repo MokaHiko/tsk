@@ -1,8 +1,20 @@
-#include "defines.h"
+#ifndef TSK_H_
+#define TSK_H_
 
-#include <cassert>
-#include <stdint.h>
+#ifdef TSK_EXPORTS
+#ifdef TSK_WIN32
+	#define TSK_API __declspec(dllexport)
+#else 
+	#define TSK_API
+#endif
+#else
+	#define TSK_API
+#endif
 
-namespace tsk {
+#if defined(_MSC_VER)
+    #define TSK_NO_VTABLE __declspec(novtable)
+#else
+    #define TSK_NO_VTABLE  // Default, do nothing for other compilers
+#endif
 
-} // namespace tsk
+#endif 

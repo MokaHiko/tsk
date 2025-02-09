@@ -9,15 +9,16 @@
 #ifndef TIME_H_
 #define TIME_H_
 
+#include "tsk_pch.h"
 #include "tsk.h"
 
 namespace tsk {
 
 /*@brief Retrieves the current high-performance counter value.*/
-TUSK_API int64_t get_hp_counter();
+TSK_API int64_t get_hp_counter();
 
 /*@brief Retrieves the current high-performance frequency value.*/
-TUSK_API int64_t get_hp_frequency();
+TSK_API int64_t get_hp_frequency();
 
 } // namespace tsk
 

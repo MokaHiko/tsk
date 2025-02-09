@@ -7,7 +7,7 @@ enum class Endianness{
     k_little_endian,
 };
 
-TUSK_API Endianness get_platform_endianess();
+TSK_API Endianness get_platform_endianess();
 
 constexpr Endianness k_stream_endianness = Endianness::k_big_endian;
 inline Endianness k_platform_endianness = get_platform_endianess();

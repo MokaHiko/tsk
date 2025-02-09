@@ -1,4 +1,4 @@
-#include "tsk/tsk.h"
+#include "tsk.h"
 
 namespace tsk {
 
@@ -6,6 +6,6 @@ namespace tsk {
 ///
 /// @param[out] texure Pointer to texture that will be populated. 
 /// @returns the amount of bytes read.
-[[nodiscard]] TUSK_API size_t file_read(const char* file_path, char* buffer, size_t buffer_size);
+[[nodiscard]] TSK_API size_t file_read(const char* file_path, char* buffer, size_t buffer_size);
 
 } // tsk
